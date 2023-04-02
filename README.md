@@ -11,12 +11,12 @@ Phase 1 : Testing normal plate recogintion
 ## Is that all ?
 - Nope it all starts here 
 1. we have also prepared the ground work for ``Easy OCR`` and ``TensorFlow Object Detection``
-2. We are done setting up ``Virtual env/Kernel`` for our ANPR system (so while integrating ``Face Recognition System`` there won't be any problem about over-writin of libraries)
+2. We are done setting up ``Virtual env/Kernel`` for our ANPR system (so while integrating ``Face Recognition System`` there won't be any problem about over-writing of libraries)
 
 ### Steps in creating Virtual environment
 Step - 1 : 
 ``
-python -m venv arpysns
+python -m venv anprsys
 ``
 
 Step - 2 : Activate your virtual environment <br>
@@ -47,7 +47,28 @@ python -m ipykernel install --user --name=anprsys
 
 4. To train model we will be using ``Transfer learning`` method in initial phase
 
+### Upcoming Plan
+!. Initially we will be using ``kaggel dataset``  and manually divided 
+the collected images into two folders 
+train and test so that all the images 
+and annotations will be split among 
+these two folders.
 
+2. We will be using ``pre-trained state-of-the-art model`` 
+and just fine tuned it on our <b>particular 
+specific use case</b>. 
+We will begin the training 
+process by opening Real Time Number 
+Plate Detection and installed the Tensoflow 
+Object Detection (TFOD) + API
+
+### Tech Stach :
+1. Opencv
+2. Easy OCR
+3. Tensorflow
+4. Jupyter Notebook/Jupyter Lab
+5. Python Libraries
+(more can be used depending upon the implementation*)
 
 ### Mentor : Ms Vernika Singh
 
